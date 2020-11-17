@@ -1,0 +1,391 @@
+/*-------- GENERALES----------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.padre {
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+}
+a {
+  color: #fff;
+}
+
+/*--------ENCABEZADO--------*/
+.header {
+  background: url(../image/bg-header.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+ 
+  margin-bottom: 1rem;
+  
+}
+.textoPrincipal {
+  margin:auto 0;
+}
+.textoPrincipal h1, h2{
+ 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  padding: 1rem 1rem 0 1rem;
+  
+ 
+  
+}
+.textoPrincipal h2{
+  font-size: .9rem;
+  padding:0;
+}
+
+
+.menu {
+  align-items: baseline;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+}
+#toggle-menu{
+  display: none;
+ 
+}
+.logo {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.logo > a {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+}
+.logo> a:hover {
+  transition: all 700ms;
+  color: orange;
+}
+
+
+.nav {
+ 
+  display: flex;
+  flex: 3;
+ 
+}
+.nav ul {
+  display: flex;
+  flex: auto;
+ 
+}
+.nav ul li {
+  display: flex;
+  line-height: 2rem;
+  flex-basis: 0;
+  flex-grow: 1;
+  border-left: 1px solid rgba(200, 200, 200, 0.7);
+  text-align:center;
+}
+.nav ul li:last-child {
+  border-right: 1px solid rgba(200, 200, 200, 0.7);
+}
+.nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  margin-left: 1rem;
+  margin: auto;
+  line-height: 3rem;
+  width: 100%;
+}
+
+.nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 500ms;
+}
+.nav ul li a:hover {
+  color: rgb(253, 117, 6);
+  
+  transition: all 500ms;
+}
+
+.nav ul li:active {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 0px 1px grey inset;
+ 
+}
+
+#social {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#social a i{
+  margin: .5rem;
+}
+#social a:hover {
+  transition: 700ms;
+}
+#social > a:nth-child(1):hover {
+  color: rgb(28, 121, 228);
+}
+#social > a:nth-child(2):hover {
+  color: rgb(228, 165, 28);
+}
+
+#social > a:nth-child(3):hover {
+  color: rgb(6, 179, 29);
+}
+
+/*------- GRID DE PRODUCTOS---------*/
+
+#titulo{
+  text-shadow: 10px 10px 10px #111;
+  margin: 2rem ; 
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.container {
+  display: flex;
+  background-color: #fff;
+  padding: 2px;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+article {
+  box-shadow: 10px 10px 10px grey;
+  flex: 25%;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  margin: 2%;
+  border-radius: 0 80px;
+  background-color: #fff;
+}
+img {
+  width: 100%;
+}
+
+article:hover {
+    box-shadow: none;
+    transform: translate( 5px,5px );
+    transition: all 800ms;
+   
+    
+}
+
+
+
+/*------FOOTER-------*/
+
+footer {
+  margin-top: 1rem;
+  background-color: #222;
+  color: #fff;
+  height: 20rem;
+}
+.footerInfo{
+display: flex;
+justify-content: space-between;
+}
+footer h4{
+  margin-top: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-left: 2rem;
+  line-height: 2rem;
+  word-spacing: normal;
+  /*display: inline-block;*/
+}
+.mercadopago{
+  width: 10rem;
+  height: 10rem;
+  float: right;
+}
+img{
+  width: 100%;
+
+}
+
+footer ul li a {
+  color: #fff;
+  text-align: center;
+}
+
+/*-----------contacto------------*/
+
+.titulo-contacto{
+  font-weight: 200;
+  font-size: 2rem;
+}
+.content-contacto{
+  background-image: linear-gradient(to bottom right,#000, steelblue);
+  border: 2px solid grey;
+  padding: 2rem;
+  width: 100%;
+
+}
+#social-contacto{
+padding: 1rem;
+line-height: 1.5rem;
+box-shadow: 3px 3px 3px steelblue;
+
+}
+#social-contacto ul{
+  padding: .5rem;
+  width: 320px;
+  margin: auto;
+}
+#social-contacto ul li i{
+  margin-right: 1rem;
+}
+
+#social-contacto ul li{
+
+  line-height: 2rem;
+  box-shadow: 2px 2px 2px ;
+  border-radius: 5px ;
+  margin: 1rem;
+  padding-left: 2rem;
+  
+}
+#social-contacto ul li a{
+  display: block;
+}
+#social-contacto ul li:hover{
+  box-shadow: none;
+  transition: all 500ms;
+}
+
+
+
+/*---------RESPONSIVE------*/
+
+
+
+@media all and (max-width: 768px){
+
+  .header{
+    height: 10rem;
+  }
+
+ .padre{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  
+ }
+ .textoPrincipal h1{
+   padding: 0;
+   font-size: 2rem;
+ }
+  .menu{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-grow: 1;
+  }
+  .logo{
+    display: none;
+    flex:auto;
+  }
+  .nav{
+    flex:1; 
+    flex-direction: column-reverse;
+    
+    
+  }
+  .nav ul li{
+    margin-left: 0;
+    border: none;
+    border-right: none;
+  }
+  .nav ul li:last-child {
+    border: none;
+  }
+  #social{
+    margin: 0;
+    padding: 0;
+  
+    
+  }
+  .nav ul li a{
+    margin:0 2rem ;
+  }
+  #titulo{
+    display: flex;
+   
+   
+
+  }
+  article{
+  flex: 40%;
+  transition: all 2s;
+}
+
+
+}
+
+@media all and (max-width: 600px){
+
+  .padre{
+    width: 100%;
+    font-size: 11px;
+  }
+
+  #toggle-menu{
+    display: flex;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  .menu{
+    flex-direction: row;
+    position: relative;
+
+  }
+  .menu .nav ul{
+  
+    margin-bottom: -14rem;
+    display: none;
+    flex: 1;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background: #212121;
+    z-index: 10;
+    padding-top: 1rem;
+
+    
+  }
+  .menu__responsive{
+
+
+  }
+
+  
+
+}
